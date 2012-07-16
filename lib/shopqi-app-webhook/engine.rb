@@ -1,5 +1,5 @@
-module ShopqiAppWebhook
+module ShopQiAppWebhook
   class Engine < ::Rails::Engine
-    isolate_namespace ShopqiAppWebhook
+    isolate_namespace ShopQiAppWebhook
   end
 end

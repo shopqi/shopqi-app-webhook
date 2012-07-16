@@ -1,4 +1,4 @@
 require "shopqi-app-webhook/engine"
 
-module ShopqiAppWebhook
+module ShopQiAppWebhook
 end

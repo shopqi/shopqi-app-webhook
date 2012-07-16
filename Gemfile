@@ -1,3 +1,4 @@
+# rails plugin new shopqi-app-webhook --mountable --dummy-path=spec/dummy -T
 source "http://rubygems.org"
 
 # Declare your gem's dependencies in shopqi-app-webhook.gemspec.

@@ -1,2 +1,2 @@
-ShopqiAppWebhook::Engine.routes.draw do
+ShopQiAppWebhook::Engine.routes.draw do
 end

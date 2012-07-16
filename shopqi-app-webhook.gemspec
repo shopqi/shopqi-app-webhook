@@ -6,12 +6,12 @@ require "shopqi-app-webhook/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "shopqi-app-webhook"
-  s.version     = ShopqiAppWebhook::VERSION
+  s.version     = ShopQiAppWebhook::VERSION
   s.authors     = ["TODO: Your name"]
   s.email       = ["TODO: Your email"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ShopqiAppWebhook."
-  s.description = "TODO: Description of ShopqiAppWebhook."
+  s.summary     = "TODO: Summary of ShopQiAppWebhook."
+  s.description = "TODO: Description of ShopQiAppWebhook."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 

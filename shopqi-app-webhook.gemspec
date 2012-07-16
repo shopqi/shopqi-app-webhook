@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.6"
   s.add_dependency "shopqi-app", "~> 0.2.3"
+  s.add_dependency "resque", "~> 1.21.0"
 
   # s.add_dependency "jquery-rails"
 

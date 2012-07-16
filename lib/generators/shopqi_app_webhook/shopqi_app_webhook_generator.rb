@@ -1,4 +1,4 @@
-class ShopQiAppWebhookGenerator < Rails::Generators::NamedBase
+class ShopQiAppWebhookGenerator < Rails::Generators::Base
   namespace 'shopqi_app_webhook'
   source_root File.expand_path('../templates', __FILE__)
 

@@ -1,5 +1,5 @@
 module ShopQiAppWebhook
-  class Engine < ::Rails::Engine
+  class Engine < Rails::Engine
     isolate_namespace ShopQiAppWebhook
     engine_name 'shopqi_app_webhook'
 

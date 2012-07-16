@@ -1,9 +1,9 @@
-require "shopqi-app-webhook/engine"
+require "shopqi_app_webhook/engine"
 
 module ShopQiAppWebhook
 
   module Rails
-    autoload :Routes, "shopqi-app-webhook/rails/routes"
+    autoload :Routes, "shopqi_app_webhook/rails/routes"
   end
 
 end

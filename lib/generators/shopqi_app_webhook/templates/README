@@ -1,6 +1,6 @@
 ===============================================================================
 
-There is something that you need to do before you use shopqi-app-webhook.
+There is something that you need to do before you use shopqi_app_webhook.
 
 Step 1.
 UNCOMMENT the line below in Gemfile

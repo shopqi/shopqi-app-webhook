@@ -1,0 +1,8 @@
+Description:
+    Generate ShopQi Webhook Api Files.
+
+Example:
+    rails generate shopqi_app_webhook
+
+    This will create:
+        app/jobs/webhook_workers.rb

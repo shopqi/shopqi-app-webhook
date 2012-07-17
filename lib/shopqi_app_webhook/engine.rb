@@ -3,6 +3,8 @@ module ShopQiAppWebhook
     isolate_namespace ShopQiAppWebhook
     engine_name 'shopqi_app_webhook'
 
+    config.active_record.observers = "ShopQiAppWebhook::ShopObserver"
+
     initializer "shopqi_app_webhook.routes" do
       ShopQiAppWebhook::Rails::Routes.install
     end

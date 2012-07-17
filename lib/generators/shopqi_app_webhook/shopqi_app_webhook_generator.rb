@@ -9,12 +9,16 @@ class ShopQiAppWebhookGenerator < Rails::Generators::Base
     directory 'app'
   end
 
-  def install_migration
-    migration_template 'db/migrate/create_orders.rb', 'db/migrate/create_orders.rb'
-  end
-
   def add_routes
     route "use_shopqi_webhook"
+  end
+
+  def update_files
+    insert_into_file "app/models/shop.rb", "\s\shas_many :orders\n", after: "class Shop < ActiveRecord::Base\n"
+  end
+
+  def install_migration
+    migration_template 'db/migrate/create_orders.rb', 'db/migrate/create_orders.rb'
   end
 
   def show

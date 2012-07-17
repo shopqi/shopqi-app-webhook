@@ -5,4 +5,7 @@ Example:
     rails generate shopqi_app_webhook
 
     This will create:
+        app/controllers/webhook_controller.rb
         app/jobs/webhook_workers.rb
+        db/models/order.rb
+        db/migrate/create_orders.rb

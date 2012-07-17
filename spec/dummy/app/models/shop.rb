@@ -1,4 +1,5 @@
 class Shop < ActiveRecord::Base
+  has_many :orders
   attr_accessible :shop_id, :name, :shopqi_domain, :access_token
 
   def self.find_for_shopqi_oauth(data)

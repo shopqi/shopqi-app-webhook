@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120716153705) do
+ActiveRecord::Schema.define(:version => 20120717042317) do
+
+  create_table "orders", :force => true do |t|
+    t.integer  "shop_id",                   :null => false
+    t.integer  "order_id",                  :null => false
+    t.string   "name",        :limit => 32, :null => false
+    t.float    "total_price",               :null => false
+    t.datetime "created_at",                :null => false
+  end
+
+  add_index "orders", ["shop_id"], :name => "index_orders_on_shop_id", :unique => true
 
   create_table "shops", :force => true do |t|
     t.integer "shop_id",                     :null => false

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'home#index'
-
   use_shopqi
-
+  use_shopqi_webhook
+  root :to => 'home#index'
 end

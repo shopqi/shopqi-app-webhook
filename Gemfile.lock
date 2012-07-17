@@ -52,6 +52,11 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (3.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (3.5.0)
+      factory_girl (~> 3.5.0)
+      railties (>= 3.0.0)
     faraday (0.8.1)
       multipart-post (~> 1.1)
     faraday_middleware (0.8.8)
@@ -196,10 +201,12 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.2)
+  factory_girl_rails
   jquery-rails
   resque_spec
   rspec-rails (~> 2.10.1)
   sass-rails (~> 3.2.5)
+  shopqi-app
   shopqi-app-webhook!
   sqlite3
   therubyracer

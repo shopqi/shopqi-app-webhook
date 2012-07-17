@@ -1,6 +1,7 @@
 require 'rails/generators/active_record'
 
 class ShopQiAppWebhookGenerator < Rails::Generators::Base
+  include Rails::Generators::Migration
   namespace 'shopqi_app_webhook'
   source_root File.expand_path('../templates', __FILE__)
 

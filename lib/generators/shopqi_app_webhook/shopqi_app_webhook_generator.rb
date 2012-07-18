@@ -14,6 +14,7 @@ class ShopQiAppWebhookGenerator < Rails::Generators::Base
   end
 
   def update_files
+    prepend_to_file "app/models/shop.rb", "require \"\#{ShopQiAppWebhook::Engine.models_dir}/shop\"\n"
     insert_into_file "app/models/shop.rb", "\s\shas_many :orders\n", after: "class Shop < ActiveRecord::Base\n"
   end
 

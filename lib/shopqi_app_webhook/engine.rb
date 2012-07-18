@@ -3,7 +3,9 @@ module ShopQiAppWebhook
     isolate_namespace ShopQiAppWebhook
     engine_name 'shopqi_app_webhook'
 
-    config.active_record.observers = "ShopQiAppWebhook::ShopObserver"
+    def models_dir
+      root.join 'app', 'models'
+    end
 
     initializer "shopqi_app_webhook.routes" do
       ShopQiAppWebhook::Rails::Routes.install

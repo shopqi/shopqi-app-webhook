@@ -4,6 +4,7 @@ module ShopQiAppWebhook
       module Helper
         def use_shopqi_webhook(options = {}, &block)
           self.post '/webhook', to: 'webhook#orders_fulfilled'#, format: :json
+          #self.mount Resque::Server.new, :at => "/resque"
         end
       end
 

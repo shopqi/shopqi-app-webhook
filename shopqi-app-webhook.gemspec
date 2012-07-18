@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 3.2.6"
-  s.add_dependency "shopqi-app", "~> 0.2.4"
+  s.add_dependency "shopqi-app", "~> 0.2.5"
   s.add_dependency "resque", "~> 1.21.0"
 
   # s.add_dependency "jquery-rails"

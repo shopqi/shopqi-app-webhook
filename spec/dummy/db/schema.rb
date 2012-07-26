@@ -14,14 +14,18 @@
 ActiveRecord::Schema.define(:version => 20120717042317) do
 
   create_table "orders", :force => true do |t|
-    t.integer  "shop_id",                   :null => false
-    t.integer  "order_id",                  :null => false
-    t.string   "name",        :limit => 32, :null => false
-    t.float    "total_price",               :null => false
-    t.datetime "created_at",                :null => false
+    t.integer  "shop_id",                               :null => false
+    t.integer  "order_id",                              :null => false
+    t.string   "name",                    :limit => 32, :null => false
+    t.string   "financial_status",        :limit => 16, :null => false
+    t.string   "financial_status_name",   :limit => 32, :null => false
+    t.string   "fulfillment_status",      :limit => 16, :null => false
+    t.string   "fulfillment_status_name", :limit => 32, :null => false
+    t.float    "total_price",                           :null => false
+    t.datetime "created_at",                            :null => false
   end
 
-  add_index "orders", ["shop_id"], :name => "index_orders_on_shop_id", :unique => true
+  add_index "orders", ["order_id"], :name => "index_orders_on_order_id", :unique => true
 
   create_table "shops", :force => true do |t|
     t.integer "shop_id",                     :null => false

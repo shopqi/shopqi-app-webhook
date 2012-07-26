@@ -16,6 +16,8 @@ class ShopQiAppWebhookGenerator < Rails::Generators::Base
   def update_files
     prepend_to_file "app/models/shop.rb", "require \"\#{ShopQiAppWebhook::Engine.models_dir}/shop\"\n"
     insert_into_file "app/models/shop.rb", "\s\shas_many :orders\n", after: /class Shop( < ActiveRecord::Base){0,1}\n/
+    insert_into_file "config/app_secret_config.yml", "\s\s\s\shost: 'lvh.me:3000'\n", after: /defaults:(.|\n|\s)+?domain:\n/
+    insert_into_file "config/app_secret_config.yml", "\s\s\s\shost: 'example.shopqiapp.com'\n", after: /production:(.|\n|\s)+?domain:\n/
   end
 
   def install_migration

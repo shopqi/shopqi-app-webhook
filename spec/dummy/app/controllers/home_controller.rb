@@ -3,7 +3,9 @@ class HomeController < ApplicationController
 
   def index
     if signed_in?
-      @orders = current_shop.orders
+      current_shop.use_shopkit
+      @orders = Shopkit.orders per_page: 3
+      @products = Shopkit.products per_page: 5
     else
       redirect_to login_path
     end

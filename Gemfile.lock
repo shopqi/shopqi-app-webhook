@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    shopqi-app-webhook (0.1.4)
+    shopqi-app-webhook (0.1.5)
       delayed_job_active_record (~> 0.3.2)
       rails (~> 3.2.6)
       shopqi-app (~> 0.2.5)
@@ -180,7 +180,6 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.2)
-  delayed_job_active_record
   factory_girl_rails
   jquery-rails
   rspec-rails (~> 2.10.1)

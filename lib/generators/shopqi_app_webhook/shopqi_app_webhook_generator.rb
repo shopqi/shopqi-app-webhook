@@ -7,6 +7,7 @@ class ShopQiAppWebhookGenerator < Rails::Generators::Base
 
   def copy_files
     directory 'app'
+    directory 'script'
   end
 
   def add_routes
@@ -19,6 +20,7 @@ class ShopQiAppWebhookGenerator < Rails::Generators::Base
   end
 
   def install_migration
+    migration_template 'db/migrate/create_delayed_jobs.rb', 'db/migrate/create_delayed_jobs.rb'
     migration_template 'db/migrate/create_orders.rb', 'db/migrate/create_orders.rb'
   end
 

@@ -5,6 +5,6 @@ Step 1.
 
 Step 2.
   $ rails server
-  $ QUEUE=* bundle exec rake resque:work
+  $ script/delayed_job start
 
 ===============================================================================

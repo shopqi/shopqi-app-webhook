@@ -17,11 +17,5 @@ module ShopQiAppWebhook
       end
     end
 
-    initializer "shopqi_app_webhook.resque" do
-      require 'resque/server'
-      current_app_name = ::Rails.application.class.to_s.split("::").first
-      Resque.redis.namespace = "resque:#{current_app_name}"
-    end
-
   end
 end

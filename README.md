@@ -26,6 +26,6 @@
 ## 启动
 
     $ rails s
-    $ QUEUE=* bundle exec rake resque:work
+    $ script/delayed_job start
 
 访问 [http://localhost:3000](http://localhost:3000)

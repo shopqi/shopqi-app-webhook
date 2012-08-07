@@ -3,6 +3,6 @@ class Shop
   after_create :add_webhook
 
   def add_webhook
-    Resque.enqueue(WebhookWorker, self.id)
+    Delayed::Job.enqueue WebhookJob.new(self.id)
   end
 end

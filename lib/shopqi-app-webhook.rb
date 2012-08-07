@@ -1,4 +1,5 @@
 require "shopqi_app_webhook/engine"
+require "delayed_job"
 
 module ShopQiAppWebhook
 

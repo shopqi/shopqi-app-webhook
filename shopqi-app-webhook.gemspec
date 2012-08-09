@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.6"
   s.add_dependency "shopqi-app", "~> 0.2.5"
   s.add_dependency "delayed_job_active_record", "~> 0.3.2"
+  s.add_dependency "daemons", "~> 1.1.8"
 
   # s.add_dependency "jquery-rails"
 

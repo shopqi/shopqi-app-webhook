@@ -8,6 +8,7 @@ class ShopQiAppWebhookGenerator < Rails::Generators::Base
   def copy_files
     directory 'app'
     directory 'script'
+    chmod "script/delayed_job", 0755
   end
 
   def add_routes

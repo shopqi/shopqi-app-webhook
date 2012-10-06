@@ -13,7 +13,9 @@
 此 engine 依赖 shopqi-app，使用前需要先调用 shopqi-app 的 generator
 
     $ rails g shopqi_app client_id client_secret
+    $ bundle exec rake db:create db:migrate # 生成 Shop 商店实体
     $ rails g shopqi_app_webhook
+    $ bundle exec rake db:create db:migrate # 生成 Order 订单实体
 
 `client_id`, `client_secret` 在注册 Application 后显示，注册时 `REDIRECT URI` 填写 localhost:3000/callback
 

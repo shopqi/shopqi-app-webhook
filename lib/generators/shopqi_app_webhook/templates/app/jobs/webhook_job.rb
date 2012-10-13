@@ -1,5 +1,5 @@
 # encoding: utf-8
-class WebhookJob < Struct.new(:shop_id)
+class WebhookJob < Struct.new(:shop_id) # automatic run after shop create
 
   def perform
     Shop.find(shop_id).use_shopkit
